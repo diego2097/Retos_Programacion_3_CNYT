@@ -1,6 +1,5 @@
 import math
 
-
 def marbles(m,v,clicks):
     if (len(m[0]) == len(v)):
         for i in range(clicks):
@@ -31,15 +30,9 @@ def crearMatrizVacia(m,n):
     matriz = [[[0,0] for col in range(n)] for ren in range(m)]
     return matriz
    
-def main():
-    matriz = [[0,1/6,5/6],[1/3,1/2,1/6],[2/3,1/3,0]]
-    vInicial = [1/5,7/10,1/10]
-    clicks=4
-    rta = marbles(matriz,vInicial,clicks)
-    print(rta)
+
+    
 
 
-
-main()
 
 
