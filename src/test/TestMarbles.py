@@ -31,7 +31,6 @@ class TestMarbles(unittest.TestCase):
         clicks = 1
         rta = proba.marbles(matriz, vInicial, clicks)
         vrta = [21/36, 9/36, 6/36]
-        barplot.graficarProba(rta)
         self.assertEqual(rta, vrta)
 
 
@@ -48,7 +47,6 @@ class TestMarbles(unittest.TestCase):
         clicks = 2
         rta = proba.marbles(matriz,vector,clicks)
         vrta = [0,0,0,1/6,1/6,1/3,1/6,1/6] 
-
         self.assertEqual(rta, vrta)
 
     def test_ComplexMarbles(self):
@@ -61,7 +59,7 @@ class TestMarbles(unittest.TestCase):
         clicks = 1
         rta = complx.marbles(matriz, v, clicks)
         vrta = [[0, 0], [1/math.sqrt(2), 0], [1/math.sqrt(2), 0], [0, 0]]
-
+        #barplot.graficarComplex(rta)
         self.assertEqual(rta, vrta)
 
     def test_multiSlitComplex(self): 
