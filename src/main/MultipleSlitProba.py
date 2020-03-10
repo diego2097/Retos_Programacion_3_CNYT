@@ -32,4 +32,18 @@ def crearMatrizVacia(m,n):
     return matriz
    
 
+def main():
+    matriz=[[0,0,0,0,0,0,0,0],
+            [1/2,0,0,0,0,0,0,0],
+            [1/2,0,0,0,0,0,0,0],
+            [0,1/3,0,1,0,0,0,0],
+            [0,1/3,0,0,1,0,0,0],
+            [0,1/3,1/3,0,1,0,0,0],
+            [0,0,1/3,0,0,0,1,0],
+            [0,0,1/3,0,0,0,0,1]]
+    vector=[1,0,0,0,0,0,0,0]
+    clicks=2
 
+    rta = marbles(matriz,vector,clicks)
+    print(rta)
+main()

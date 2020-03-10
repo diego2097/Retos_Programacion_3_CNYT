@@ -44,6 +44,8 @@ def suma(c1,c2):
     rta.append(c1[1] + c2[1])
     return rta
 
-
+def modulo(c):
+    rta = ((c[0]**2) + (c[1]**2))**(1/2)
+    return rta
 
 
